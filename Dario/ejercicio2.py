@@ -3,24 +3,24 @@ def doble(a):
     numdoble = a*2
     return numdoble
 #llamando a la funcion
-num1 = int(input("ingrese un numero : "))
+num1 = float(input("ingrese un numero : "))
 print(doble(num1))
 
 
 #2-Hacer una funcion saludo, que pregunte el nombre al usuario, 
 # luego lo salude diciendo "Encantado de conocerte Fulano", donde Fulano sera el nombre que haya 
 # contestado el usuario. por ultimo la funcion debe devolver el nombre del usuario.
-def saludo():
-    nom=input("Ingrese su nombre : ")
-    print("Encantado de conocerte,",nom+"!")
-    return nom
+def saludo():#no se llama a un parametro, solo se define la funcion.
+    nom=input("Ingrese su nombre : ")#se crea la variable y se pregunta
+    print("Encantado de conocerte,",nom+"!")#se toma la variable y se imprime un saludo cordial.
+    return nom#retorna la variable
 
 #3-Hacer una funcion que pregunte la edad al usuario: "cuantos años tenes Fulano?"
 #  donde Fulano sera el nombre que haya recibido como parámetro. 
 # La función debe retornar la edad.
-def edad(nombre):
-    edad=input("cuantos años tenes " + nombre + "? ")
-    return edad
+def edad(nombre):#se crea una funcion llamando a un parametro
+    edad=input("Cuantos años ténes " + nombre + "? ")#se crea una variable y se guarda 
+    return edad#retorna la variable
 
 #llamando a las 2 anteriores funciones
 nombre=saludo()
@@ -42,6 +42,5 @@ def calcIva(a):
     return iva
 #llamando a la funcion
 
-precio=float(input("ingrese precio"))
+precio=float(input("ingrese precio : "))
 print(calcIva(precio))
-
