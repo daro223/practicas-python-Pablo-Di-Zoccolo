@@ -11,6 +11,7 @@
 # Luego informar la suma de los números ingresados
 
 num=float(input("ingrese un número. 0 termina el programa. "))
+
 cont=float(0)
 sum=float(0)
 #mayor=float(0)
@@ -31,3 +32,4 @@ if num!=0:
 else:
     print("no ingreso numero")
 
+    
