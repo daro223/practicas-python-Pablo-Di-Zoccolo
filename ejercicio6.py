@@ -21,19 +21,21 @@ for i in range(5):
 preguntar un color màs y luego informarle si ese color existe en la lista"""
 
 color=input("ingrese un color : ")
-
+#creo una variable check para para verificar que no este en la lista luego de verificar por un for.
+check=False 
 for i in range(5):
     if color==colores[i]:
-        check=0
+        check=True
         print("este color esta en la lista en la posicion",i)
-    if check==1:
-        print("este color no esta la lista.")
 
-        respuesta=input("Desea agregarlo? (si o no)")
-    
-if respuesta=="si":
-    colores.append(color)
-        
+#si esta en la lista el programa termina. 
 
+#en caso contrario abro un nuevo if tomando el check falso.
+
+if check==False:
+    print("este color no esta la lista.")
+    respuesta=input("Desea agregarlo en la ultima posicición?  (si o no)")
+    if respuesta=="si":
+        colores.append(color)
 
     print(colores)
