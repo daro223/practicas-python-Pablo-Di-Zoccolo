@@ -1,16 +1,18 @@
 #1-Preguntarle la edad al usuario e informarle si puede votar o no.
 
-edad=float(input("Decime tu edad"))
-if edad >15 and edad <18:
-    print("Es optativo votar")
-elif edad >17 and edad <=70 :
-    print("Es obligatorio votar")
-elif edad >0 and edad <17:
-    print("No puede votar")
-elif edad <1 or edad >150 :
-    print("Edad incorrecta")
-else :
-    print("Número incorrecto")
+edad=float(input("Decime tu edad : "))
+#si tiene entre 0 y 16 no puede votar
+if edad > 0 and edad < 18:
+    print("Usted no puede votar.")
+#si tiene entre 17 y 70 es obligatorio.
+elif edad >= 18 and edad <=70:
+    print("Usted vota obligatoriamente.")
+#si tiene entre 71 y 150. es optativo votar.
+elif edad >70 and edad <150:
+    print("Usted puede votar, pero no es obligatorio.")
+#si tiene 0 o menos o mas de 150. 
+else:
+    print(f"La edad '{edad}' no es valida.")
 
 #2-Pedí al usuario el total de una compra. Si supera $5000, mostrar "Tenés un 10% de descuento".Si no, mostrar "Sin descuento"
 

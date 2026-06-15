@@ -22,33 +22,29 @@ for i in range(pregnumero()):
 
 #2-Mostrar los primeros 25 números naturales.
 
-for i in range(1,26,1):
+for i in range(1,26):
     print(i)
 
-#3-Preguntar uyn número al usuario y mostrar los números naturales hasta dicho número.
+#3-Preguntar un número al usuario y mostrar los números naturales hasta dicho número.
 
 nom=pregnombre()
 num=pregnumero()
-for i in range(num):
-    print(i+1)
+for i in range(1,num+1):
+    print(i)
 
 #4-Mostrar la tabla del 2
 
-for i in range(1,11,1):
-    result = 2*i
-    print("2 *",i,"=",result)
+for i in range(1,11):
+    print(f"2 x {i} = {2*i}")
     
 
 #5-Preguntar un número al usuario y mostrar la tabla de ese número.
 def tabla(n):
-    for i in range(1,11,1):
-        result = n*i
-        print( n,"*",i,"=",result)
+    for i in range(1,11):
+        print(f"{n} x {i} = {i*n}")
 
 tabla(pregnumero())
 #-extra
 
-for n in range(1,11):
-    for i in range(1,11):
-        result = n*i
-        print( n,"*",i,"=",result)
+for i in range(1,11):
+    tabla(i)

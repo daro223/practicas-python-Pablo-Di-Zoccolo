@@ -9,33 +9,27 @@ print(len(frutas))
 
 """preguntar 20 colores al usuario,
  guardarlos en una lista y luego mostrar los elementos de la lista, uno por renglon."""
-
 colores=[]
-for i in range(5):
+for i in range(20):
     colores.append(input("ingrese color : "))
 
-for i in range(5):
-    print(colores[i])
+"""preguntar un color màs y luego informarle si ese color existe en la lista"""
 
-"""preguntar 20 colores al usuario, guardarlos en una lista, 
-preguntar un color màs y luego informarle si ese color existe en la lista"""
-
-color=input("ingrese un color : ")
-#creo una variable check para para verificar que no este en la lista luego de verificar por un for.
+entrada=input("ingrese un color : ")
+#abro un check en False
 check=False 
-for i in range(5):
-    if color==colores[i]:
+#recorre la Lista de colores, si la entrada coincide con la lista se cambia check se guarda posicion de la Lista y se imprime- 
+for color in colores:
+    if color == entrada:
         check=True
-        print("este color esta en la lista en la posicion",i)
+        posicion = colores.index(color)
+        print(f"este color esta en la lista en la posicion {posicion+1}")
 
-#si esta en la lista el programa termina. 
-
-#en caso contrario abro un nuevo if tomando el check falso.
-
-if check==False:
+#si la entrada no esta en la Lista se informa y se pide una confirmacion para agregarlo al final.
+if not check:
     print("este color no esta la lista.")
     respuesta=input("Desea agregarlo en la ultima posicición?  (si o no)")
-    if respuesta=="si":
+    if respuesta.lower()=="si":
         colores.append(color)
 
     print(colores)
