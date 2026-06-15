@@ -4,7 +4,7 @@
                          #3-Preguntar un número al usuario y mostrar los números naturales hasta dicho número.
                          #4-Mostrar la tabla del 2
                          #5-Preguntar un número al usuario y mostrar la tabla de ese número."""
-
+"""ejercicio 5 lo vi y dije en otro momento."""
 """se optimizo y se agregaron 2 opciones a ejercicio 6-4
                          #se agregaron una opcion para agregar número y otra para quitar un número"""
 
